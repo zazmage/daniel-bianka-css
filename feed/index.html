@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed</title>
+</head>
+
+<body class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-4xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-gray-900">SocialApp</h1>
+        <nav class="flex space-x-4">
+          <a href="/feed/" class="text-brand-600 font-medium">Feed</a>
+          <a href="/profile/" class="text-gray-600 hover:text-brand-600">Profile</a>
+          <a href="/" class="text-gray-600 hover:text-brand-600">Logout</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Search and Sort Bar -->
+    <div class="card mb-6">
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1">
+          <input type="text" placeholder="Search posts..."
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+        </div>
+        <select
+          class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+          <option>Sort by: Latest</option>
+          <option>Sort by: Oldest</option>
+          <option>Sort by: Popular</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Create New Post Form -->
+    <div class="card mb-8">
+      <h2 class="text-lg font-semibold text-gray-900 mb-4">Create New Post</h2>
+      <form class="space-y-4">
+        <div>
+          <textarea placeholder="What's on your mind?" rows="3"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"></textarea>
+        </div>
+        <div class="flex justify-between items-center">
+          <input type="file" accept="image/*" class="text-sm text-gray-500">
+          <button type="submit"
+            class="px-6 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            Post
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Posts List -->
+    <div class="space-y-6">
+      <!-- Post 1 - Bianka's Bali Post -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=5" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Bianka Szabo</h3>
+            <p class="text-sm text-gray-500">2 hours ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Watching the sunrise over Mount Batur in Bali was a life-changing experience! The
+          hike was challenging but so rewarding. The local guides shared stories about Balinese mythology and made the
+          journey unforgettable.</p>
+        <img src="https://picsum.photos/600/300?random=1" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Post 2 - Vietnam -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=2" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Carlos Rodriguez</h3>
+            <p class="text-sm text-gray-500">5 hours ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Sailing through Ha Long Bay in Vietnam has been the highlight of my journey
+          through Southeast Asia! The limestone karsts rising from the emerald waters create a landscape that seems out
+          of a fairy tale. The local fishing communities welcomed us with such warmth.</p>
+        <img src="https://picsum.photos/600/400?random=2" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Post 3 - Peru -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=3" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Emma Davies</h3>
+            <p class="text-sm text-gray-500">1 day ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Exploring the ancient ruins of Machu Picchu in Peru has been a dream come true.
+          The ingenuity of the Inca civilization is mind-blowing. I spent the day with a local guide who shared
+          indigenous knowledge passed down through generations. Peru's cultural heritage is simply incredible!</p>
+        <img src="https://picsum.photos/600/350?random=3" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Post 4 - Cambodia -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=4" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Alex Tanaka</h3>
+            <p class="text-sm text-gray-500">2 days ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Watching the sunrise over Angkor Wat in Cambodia was spiritual. The intricate
+          stone carvings tell stories of ancient times, and the scale of this temple complex is awe-inspiring. The
+          resilience of the Cambodian people and their kindness despite historical challenges is truly inspiring.</p>
+        <img src="https://picsum.photos/600/450?random=4" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Post 5 - Morocco -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=6" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Sophia Mbeki</h3>
+            <p class="text-sm text-gray-500">3 days ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Lost in the blue streets of Chefchaouen, Morocco. The entire city is painted in
+          mesmerizing shades of blue! Local artisans taught me traditional carpet weaving techniques today, and I
+          enjoyed the most delicious mint tea with a family who welcomed me into their home.</p>
+        <img src="https://picsum.photos/600/350?random=6" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- Post 6 - Myanmar -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=7" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Oliver Jenkins</h3>
+            <p class="text-sm text-gray-500">4 days ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Ballooning over Bagan in Myanmar at dawn, watching thousands of ancient temples
+          emerge from the morning mist. This landscape holds centuries of history and spirituality. The local
+          craftspeople create incredible lacquerware using techniques unchanged for generations.</p>
+        <img src="https://picsum.photos/600/400?random=7" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/js/feed.js"></script>
+</body>
+
+</html>

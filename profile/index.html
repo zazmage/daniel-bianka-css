@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+</head>
+
+<body class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-4xl mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-gray-900">SocialApp</h1>
+        <nav class="flex space-x-4">
+          <a href="/feed/" class="text-gray-600 hover:text-brand-600">Feed</a>
+          <a href="/profile/" class="text-brand-600 font-medium">Profile</a>
+          <a href="/" class="text-gray-600 hover:text-brand-600">Logout</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <!-- Profile Header -->
+    <div class="card mb-8">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+        <!-- Profile Image -->
+        <img src="https://picsum.photos/120/120?random=5" alt="Profile picture"
+          class="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover">
+
+        <!-- Profile Info -->
+        <div class="flex-1 text-center sm:text-left">
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">Bianka Szabo</h2>
+
+          <!-- Following/Followers -->
+          <div class="flex justify-center sm:justify-start space-x-6 mb-4">
+            <div class="text-center">
+              <div class="text-xl font-semibold text-gray-900">208</div>
+              <div class="text-sm text-gray-600">Following</div>
+            </div>
+            <div class="text-center">
+              <div class="text-xl font-semibold text-gray-900">1.5k</div>
+              <div class="text-sm text-gray-600">Followers</div>
+            </div>
+          </div>
+
+          <!-- Follow Button -->
+          <button
+            class="px-6 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            Follow
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Posts -->
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold text-gray-900">Posts</h3>
+    </div>
+
+    <div class="space-y-6">
+      <!-- User Post 1 -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=5" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Bianka Szabo</h3>
+            <p class="text-sm text-gray-500">3 hours ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Day 3 in Bali and I'm completely enchanted! Visited the sacred Tirta Empul Temple
+          today and took part in a traditional purification ceremony. The spiritual energy here is unlike anything I've
+          experienced before.</p>
+        <img src="https://picsum.photos/600/300?random=10" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- User Post 2 -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=5" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Bianka Szabo</h3>
+            <p class="text-sm text-gray-500">1 day ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Paradise found in Ubud, Bali! Spent the day exploring rice terraces that stretch
+          as far as the eye can see. The local farming techniques are centuries old but still so efficient. Learned so
+          much about sustainable agriculture today!</p>
+        <img src="https://picsum.photos/600/400?random=11" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- User Post 3 -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=5" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Bianka Szabo</h3>
+            <p class="text-sm text-gray-500">3 days ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Just arrived in beautiful Bali! ✈️ The warm welcome from locals has been
+          incredible. Already tried some amazing Indonesian coffee and traditional Balinese breakfast. This is going to
+          be an incredible journey!</p>
+        <img src="https://picsum.photos/600/350?random=12" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+
+      <!-- User Post 4 -->
+      <div class="card">
+        <div class="flex items-start space-x-3 mb-4">
+          <img src="https://picsum.photos/40/40?random=5" alt="User avatar" class="w-10 h-10 rounded-full">
+          <div>
+            <h3 class="font-semibold text-gray-900">Bianka Szabo</h3>
+            <p class="text-sm text-gray-500">1 week ago</p>
+          </div>
+        </div>
+        <p class="text-gray-800 mb-4">Counting down the days until my Bali adventure begins! Backpack is ready,
+          itinerary planned, and my heart is full of excitement. Can't wait to experience the culture, food, and natural
+          beauty of Indonesia! #TravelPrep #BaliDreaming</p>
+        <img src="https://picsum.photos/600/450?random=13" alt="Post image"
+          class="w-full h-64 object-cover rounded-lg mb-4">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/js/profile.js"></script>
+</body>
+
+</html>

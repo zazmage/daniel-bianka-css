@@ -1,13 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authentication</title>
+</head>
+
+<body class="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4">
+  <div class="max-w-md w-full space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900">SocialApp</h2>
+      <p class="mt-2 text-sm text-gray-600">Sign in to your account or create a new one</p>
+    </div>
+
+    <!-- Auth Form Container -->
+    <div class="card">
+      <!-- Tab Navigation -->
+      <div class="flex mb-6 bg-gray-100 rounded-lg p-1 gap-2">
+        <button type="button" class="flex-1 py-2 px-4 text-sm font-medium rounded-md transition-colors tab-btn"
+          id="signin-tab">
+          Sign In
+        </button>
+        <button type="button" class="flex-1 py-2 px-4 text-sm font-medium rounded-md transition-colors tab-btn"
+          id="signup-tab">
+          Sign Up
+        </button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="signin-form" class="space-y-6">
+        <div>
+          <label for="signin-email" class="block text-sm font-medium text-gray-700">Email address</label>
+          <input id="signin-email" name="email" type="email" autocomplete="email" required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Enter your email">
+        </div>
+
+        <div>
+          <label for="signin-password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input id="signin-password" name="password" type="password" autocomplete="current-password" required
+            minlength="8"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Enter your password">
+          <p class="mt-1 text-xs text-gray-500">Password must be at least 8 characters long</p>
+        </div>
+
+        <div>
+          <button type="submit"
+            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+            Sign In
+          </button>
+        </div>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signup-form" class="space-y-6 hidden">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="signup-firstname" class="block text-sm font-medium text-gray-700">First name</label>
+            <input id="signup-firstname" name="firstname" type="text" autocomplete="given-name" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+              placeholder="First name">
+          </div>
+          <div>
+            <label for="signup-lastname" class="block text-sm font-medium text-gray-700">Last name</label>
+            <input id="signup-lastname" name="lastname" type="text" autocomplete="family-name" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+              placeholder="Last name">
+          </div>
+        </div>
+
+        <div>
+          <label for="signup-email" class="block text-sm font-medium text-gray-700">Email address</label>
+          <input id="signup-email" name="email" type="email" autocomplete="email" required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Enter your email">
+        </div>
+
+        <div>
+          <label for="signup-password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input id="signup-password" name="password" type="password" autocomplete="new-password" required minlength="8"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Create a password">
+          <p class="mt-1 text-xs text-gray-500">Password must be at least 8 characters long</p>
+        </div>
+
+        <div>
+          <label for="signup-confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+          <input id="signup-confirm-password" name="confirm-password" type="password" autocomplete="new-password"
+            required minlength="8"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
+            placeholder="Confirm your password">
+        </div>
+
+        <div>
+          <button type="submit"
+            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+            Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/js/auth.js"></script>
+</body>
+
 </html>
